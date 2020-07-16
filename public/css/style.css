@@ -1,0 +1,107 @@
+
+		
+		body {font-family: Arial, Helvetica, sans-serif;
+		background: #f7f7f7 url(doc.jpeg) 0 0 no-repeat;
+		background-size:cover;}
+		* {box-sizing: border-box;}
+		.headDiv{text-align: center;
+				color: #32197c;}
+		/* Button used to open the chat form - fixed at the bottom of the page */
+		.open-button {
+		  background-color: #555;
+		  color: white;
+		  padding: 16px 20px;
+		  border: none;
+		  cursor: pointer;
+		  opacity: 0.8;
+		  position: fixed;
+		  bottom: 23px;
+		  right: 28px;
+		  width: 280px;
+		}
+
+		/* The popup chat - hidden by default */
+		.chat-popup {
+		  display: none;
+		  position: fixed;
+		  bottom: 0;
+		  right: 15px;
+		  border: 3px solid #f1f1f1;
+		  z-index: 9;
+		}
+
+		/* Add styles to the form container */
+		.form-container {
+		  max-width: 300px;
+		  padding: 10px;
+		  background-color: white;
+		}
+
+		/* Full-width textarea */
+		.form-container textarea {
+		  width: 100%;
+		  padding: 15px;
+		  margin: 5px 0 22px 0;
+		  border: none;
+		  background: #f1f1f1;
+		  resize: none;
+		  min-height: 200px;
+		}
+
+		/* When the textarea gets focus, do something */
+		.form-container textarea:focus {
+		  background-color: #ddd;
+		  outline: none;
+		}
+
+		/* Set a style for the submit/send button */
+		.form-container .btn {
+		  background-color: #4CAF50;
+		  color: white;
+		  padding: 16px 20px;
+		  border: none;
+		  cursor: pointer;
+		  width: 100%;
+		  margin-bottom:10px;
+		  opacity: 0.8;
+		}
+
+		/* Add a red background color to the cancel button */
+		.form-container .cancel {
+		  background-color: red;
+		}
+
+		/* Add some hover effects to buttons */
+		.form-container .btn:hover, .open-button:hover {
+		  opacity: 1;
+		}
+		
+		#microBtn {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 0;
+  border-radius: 50%;
+  padding: .7em 1em;
+  margin: 4em auto 3em;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(180deg, #39C2C9 0%, #3FC8C9 80%, #3FC8C9 100%);
+  box-shadow: 2px 5px 30px rgba(63, 200, 201, .4);
+  border: none;
+    background-color: transparent;
+  will-change: transform, filter;
+  transition: all 0.3s ease-out;
+}
+#microBtn .fa {
+  margin: 0;
+  text-shadow: 1px 2px 2px #2a8b90;
+}
+#microBtn:hover {
+  transform: scale(.92);
+}
+#microBtn:active {
+  filter: brightness(.8);
+}
+#microBtn:focus {
+  outline: 0;
+}

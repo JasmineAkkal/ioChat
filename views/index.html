@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+	</head>
+	<body>
+	<h1 style="text-align: center;color: #32197c;">GENERAL PRACTITIONER</h1>
+	<br>
+	<h1 style="text-align: center;color: #32197c;">Help Window</h1>
+			<button class="open-button" onclick="openForm()">Chat</button>
+			<div class="chat-popup" id="myForm">
+			  <form action="/action_page.php" class="form-container">
+				<h1>Chat</h1>
+
+				<label for="msg"><b>Message</b></label>
+				<textarea id="displaydiv" placeholder="Type message.." name="msg" disabled></textarea>
+				<input type="text" id="textdiv" placeholder="Type message..">
+				<button type="button" id="microBtn"><i class="fa fa-microphone"></i></button>
+				<p>Bot replied: <em class="output-bot">...</em></p>
+				<button type="button" onclick="sendClientMsg();" id="sendBtn" class="btn">Send</button>
+				<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+			  </form>
+			</div>
+		
+		
+		
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="js/script.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="css/style.css">
+		<script>
+		//var text = "";
+		
+		function openForm() {
+			document.getElementById("myForm").style.display = "block";
+		}
+
+		function closeForm() {
+			document.getElementById("myForm").style.display = "none";
+		}
+
+		chatMessages = [];
+		</script>
+	</body>
+</html>
